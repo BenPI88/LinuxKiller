@@ -12,12 +12,6 @@ if ans == "y":
   time.sleep(5)
   while not i == 60:
     i += 1
-    i2 = 0
-    text = ""
-    while not i2 == 60 - i:
-      i2 += 1
-      text = text + "-"
-    print(text)
     os.system("clear")
     print("COMPUTER DESTRUCTION IN")
     print(str(60 - i) + " SECONDS!!!")
